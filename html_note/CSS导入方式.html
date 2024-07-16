@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS导入方式</title>
+</head>
+<style>
+    /* 标签选择器 */
+    /* p{
+        color: rgb(21, 44, 54);
+        font-size: 26px;
+        text-align: center;
+    } */
+    /* class选择器 */
+    .center{
+        text-align: center;
+    }
+    .red{
+        color: red;
+    }
+    /* id选择器 */
+    #blue{
+        color: blue;
+    }
+    /*组合选择器*/
+            /*后代选择器*/
+            div p{
+                color: green;
+            }
+            
+            /*子元素选择器*/
+            div>p{
+                color: green;
+            }
+            /*相邻兄弟选择器*/
+            div+p{
+                color: green;
+            }
+            /*通用兄弟选择器*/
+            div~p{
+                color: green;
+            }
+</style>
+<body>
+    <p class="center red">这是一个应用CSS样式的文本</p>
+</body>
+</html>
